@@ -1,0 +1,18 @@
+@import "./variable" .btn-konteynir {
+	button {
+		color: white;
+		margin-top: 5px;
+		border-radius: 5px;
+		margin-bottom: 5px;
+	}
+	&-small {
+		background-color: $turuncu;
+		padding: 5px;
+	}
+
+	&--large {
+		background-color: $darkGreen;
+		width: 60px;
+		padding: 5px;
+	}
+}
