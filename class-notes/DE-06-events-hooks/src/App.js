@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Events from "./1-events-hooks-intro/Events";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Hooks from "./2-hooks/Hooks";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div >
+            <Events />
+
+            <Hooks />
+        </div>
+    );
 }
 
 export default App;
