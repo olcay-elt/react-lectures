@@ -8,8 +8,12 @@ import React from 'react'
 //! HTML'de value niteliği JSX'de defaultValue olarak tanımlanmalı.
 //! Ayrıca JSX de  javascript ifadeleri {} içinde çalıştırılabilir. Buna map, && gibi yapılarda dahil.
 
+import { useState } from 'react'
 
 const Form = () => {
+    const [isim, setIsim] = useState("")
+    const [password, setPass] = useState("")
+    const [country, setCountry] = useState("")
     return (
         <div className="container text-center mt-4">
             <h1>**************************************************</h1>
@@ -19,7 +23,7 @@ const Form = () => {
                     <label htmlFor="username" className="form-label">
                         USERNAME: <span className="text-danger fw-bold">isim</span>
                     </label>
-                    <input type="text" className="form-control" id="username" />
+                    <input type="text" className="form-control" id="username" onInput={(e) => console.log(e)} />
                 </div>
 
                 <div className="mb-3">
@@ -31,7 +35,7 @@ const Form = () => {
 
                 <div className="mb-3">
                     <label htmlFor="country" className="form-label">
-                        COUNTRY: <span className="text-danger fw-bold">country</span>
+                        COUNTRY: <span className="text-danger fw-bold">{country}</span>
                     </label>
                     <select className="form-select" id="country">
                         <option value="">COUNTRY</option>
