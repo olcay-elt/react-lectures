@@ -6,6 +6,7 @@ const Hooks = () => {
         isim: "Sefa",
         email: "sefa@hotmail.com",
         yas: 34,
+        renk: "green"
     });
 
     const arttir = () => {
@@ -13,7 +14,22 @@ const Hooks = () => {
     };
 
     const degistir = () => {
-        setPeople({ isim: "Olcay", email: "olcay@hotmail.com", yas: 25 });
+        if (people.renk === "green") {
+            setPeople({
+                isim: "Olcay",
+                email: "olcay@hotmail.com",
+                yas: 25,
+                renk: "orange"
+            });
+        }
+        else {
+            setPeople({
+                isim: "Sefa",
+                email: "sefa@hotmail.com",
+                yas: 34,
+                renk: "green"
+            })
+        }
     };
     return (
         <div className="container">
