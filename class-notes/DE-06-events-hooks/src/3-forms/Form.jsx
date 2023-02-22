@@ -11,40 +11,50 @@ import React from 'react'
 
 const Form = () => {
     return (
-        <div>
+        <div className='container text-center mt-4'>
             <h1>******************************************</h1>
             <h1>FORM (EVENTS)</h1>
             <form>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputEmail1" className="form-label">
-                        Email address
+                    <label htmlFor="username" className="form-label">
+                        USERNAME: <span className='text-danger fw-bold'>isim</span>
                     </label>
                     <input
-                        type="email"
+                        type="text"
                         className="form-control"
-                        id="exampleInputEmail1"
+                        id="username"
                         aria-describedby="emailHelp"
                     />
-                    <div id="emailHelp" className="form-text">
-                        We'll never share your email with anyone else.
-                    </div>
+
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="exampleInputPassword1" className="form-label">
-                        Password
+                    <label htmlFor="password" className="form-label">
+                        PASSWORD
                     </label>
                     <input
                         type="password"
                         className="form-control"
-                        id="exampleInputPassword1"
+                        id="password"
                     />
                 </div>
-                <div className="mb-3 form-check">
-                    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                    <label className="form-check-label" htmlFor="exampleCheck1">
-                        Check me out
+
+                <div>
+                    <label htmlFor="username" className="form-label">
+                        USERNAME: <span className='text-danger fw-bold'>isim</span>
                     </label>
+
+                    <select className="form-select" aria-label="Default select example">
+                        <option selected="">Open this select menu</option>
+                        <option value={1}>One</option>
+                        <option value={2}>Two</option>
+                        <option value={3}>Three</option>
+                    </select>
+
                 </div>
+
+
+
+
                 <button type="submit" className="btn btn-primary">
                     Submit
                 </button>
