@@ -5,11 +5,13 @@ import Form from "react-bootstrap/Form";
 import { data } from "../helpers/data";
 import PlayerCard from "./PlayerCard";
 import { useState } from "react";
-
-
 const CardContainer = () => {
     const [search, setSearch] = useState("");
     console.log(search);
+    //   const filteredData = data.filter((player) =>
+    //     player.name.toLowerCase().includes(search.trim().toLowerCase())
+    //   );
+    //   console.log(filteredData);
     return (
         <>
             <Form.Control
@@ -20,13 +22,17 @@ const CardContainer = () => {
             />
             <Container className="rounded-4 my-4 p-3 card-container">
                 <Row className="g-3 justify-content-center">
-                    {data.map((player, i) => {
-                        return (
-                            <Col key={i} md={6} lg={4} xl={3}>
-                                <PlayerCard {...player} />
-                            </Col>
-                        );
-                    })}
+                    {data
+                        .filter((player) =>
+                            player.name.toLowerCase().includes(search.trim().toLowerCase())
+                        )
+                        .map((player, i) => {
+                            return (
+                                <Col key={i} md={6} lg={4} xl={3}>
+                                    <PlayerCard {...player} />
+                                </Col>
+                            );
+                        })}
                 </Row>
             </Container>
         </>
