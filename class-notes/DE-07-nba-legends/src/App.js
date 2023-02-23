@@ -1,11 +1,12 @@
+import Container from "react-bootstrap/Container";
+import Header from "./components/Header"
 
-import Msg from "./msg/Msg";
 
 function App() {
     return (
-        <div >
-
-        </div>
+        <Container className="text-center mt-4">
+            <Header />
+        </Container>
     );
 }
 
