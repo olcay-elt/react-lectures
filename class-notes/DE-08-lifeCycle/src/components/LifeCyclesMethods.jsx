@@ -1,7 +1,7 @@
 //?==================================================================
 //?                         LIFECYCLE METHODS
 //?          https://reactjs.org/docs/react-component.html
-//?         
+//?
 //?==================================================================
 
 //* Lifecycle yöntemleri, DOM'daki süreleri boyunca componentler üzerinde çalışmak için kullanılan, React'te yerleşik özel yöntemlerdir.
