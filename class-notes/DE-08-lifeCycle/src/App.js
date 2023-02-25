@@ -1,10 +1,11 @@
-import LifeCycleMethods from "./components/LifeCyclesMethods";
+// import LifeCycleMethods from "./components/LifeCyclesMethods";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Clock from "./components/Clock";
+// import Clock from "./components/Clock";
 import "./App.css";
-import { useState } from "react"; import People from "./components/People";
+// import { useState } from "react";
+import People from "./components/People";
 function App() {
-    const [goster, setGoster] = useState(true);
+    // const [goster, setGoster] = useState(true);
 
     return (
         <div>
