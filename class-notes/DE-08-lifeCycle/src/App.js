@@ -1,4 +1,4 @@
-import LifeCycleMethods from "./components/LifeCycleMethods";
+import LifeCycleMethods from "./components/LifeCyclesMethods";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Clock from "./components/Clock";
 import "./App.css";
