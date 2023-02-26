@@ -28,10 +28,12 @@
 
 import React, { useEffect, useState } from "react";
 import moment from "moment";
+
 const Clock = () => {
     const [zaman, setZaman] = useState(moment());
     const [count, setCount] = useState(0);
-    //!comppnentDidMount=ilk render da çalış birdaha burayı görme
+
+    //!componentDidMount=ilk render da çalış birdaha burayı görme
     useEffect(() => {
         const time = setInterval(() => {
             setZaman(moment());
@@ -44,31 +46,32 @@ const Clock = () => {
             console.log("başka sayfaya gidildiği için interval öldü");
         };
     }, []);
+
     //!count değişkeni her güncellendiğinde alttakiler olsun
     useEffect(() => {
         console.log("count değişti");
-
-
     }, [count])
 
-
     return (
-        <div>
-            {zaman.format("HH")}
-
-            {zaman.format("ss") % 2 === 0 ? ":" : " "}
-
-            {zaman.format("mm")}
-
-            {zaman.format("ss") % 2 === 0 ? ":" : " "}
-
-            {zaman.format("ss")}
+        <div className="card">
+            <h1 className="my-4">
+                <span className="badge bg-primary">
+                    {zaman.format("HH")}
+                    {zaman.format("ss") % 2 === 0 ? ":" : " "}
+                    {zaman.format("mm")}
+                    {zaman.format("ss") % 2 === 0 ? ":" : " "}
+                    {zaman.format("ss")}
+                </span>
+            </h1>
 
             <div className="bg-secondary">
                 <button className="btn btn-warning" onClick={() => setCount(count + 1)}>
                     ARTTIR
                 </button>
-                <h1>{count}</h1>
+
+                <h1>
+                    {count}
+                </h1>
             </div>
         </div>
     );
