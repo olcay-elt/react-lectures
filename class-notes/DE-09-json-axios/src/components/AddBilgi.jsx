@@ -7,14 +7,19 @@ const AddBilgi = ({ postBilgi }) => {
     const [title, setTitle] = useState("")
     const [desc, setDesc] = useState("")
 
+    //!babadaki postBilgi tüm hatlarıyla alttaki gibi buraya gelmiş gibi oldu
     // const postBilgi = async (yeniVeri) => {
     //   await axios.post(url, yeniVeri);
     // };
 
     const gonder = (e) => {
+        //!e.preventDefault()=sadece submit olaylarında, submit in default görevini yapmadan önce benim dediklerimi yap
         e.preventDefault();
-        //!verileri database e yolla
-        postBilgi({ title: title, description: desc })
+        //!verileri database e yolla, ilk veri oluşurken id ye gerek yok, database id yi kendi verir
+        postBilgi({ title: title, description: desc });
+        //! post işleminden sonra inputların içi temizlensin
+        setTitle("")
+        setDesc("")
 
     }
 
@@ -32,6 +37,7 @@ const AddBilgi = ({ postBilgi }) => {
                         className="form-control"
                         id="title"
                         placeholder="Enter your title"
+                        //!post işleminden sonra input alanını boşaltmak istiyorsak value={title} olarak belirtmeliyiz va post tan sonra setTitle("") ile title ı " " hiçlik yapmalıyız
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
                         required
