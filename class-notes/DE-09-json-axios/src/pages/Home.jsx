@@ -23,12 +23,19 @@ const Home = () => {
         getBilgiler();
     }, []);
 
-    // console.log(bilgiler);
+    //!POST (create) database e veri gönderme
+    const postBilgi = async (yeniVeri) => {
+        await axios.post(url, yeniVeri)
+        getBilgiler();
+
+    }
+
+    //!post işlemi ile database e veriler gitti ama ekranda eski bilgiler dizisi basılı, tekrar databaseden güncel verileri çekip bilgiler dizisini yeniledik, dolayısıyla ekran tetiklendi, yeni bilgiler göründü
     return (
         <>
-            <AddBilgi />
+            <AddBilgi postBilgi={postBilgi} />
 
-            <BilgiList bilgiler={bilgiler} />
+            <BilgiList bilgiler={bilgiler} getBilgiler={getBilgiler} />
         </>
     );
 };
