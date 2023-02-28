@@ -2,7 +2,7 @@ import axios from "axios";
 
 const EditTutorial = ({ editModal, setEditmodal, getBilgiler }) => {
     //! veriler editModal={id:id,title:title,desription:description} formatıyla buraya geldiği için destructuring yapmayı tercih ettim. buraya babadan gelen değiştirebilme yeteneği sayesinde inputlara girilen verileri eskisiyle değiştirdim, (altta açıklama var)
-    const { id, title, description } = editModal;
+    const { title, description } = editModal;
     const url = "https://tutorial-api.fullstack.clarusway.com/tutorials/";
     //! sonra save butonuna basınca  putBilgi (put) fonksiyonu sayesinde değişiklik tamamlandı
     const putBilgi = async (editVeri) => {
