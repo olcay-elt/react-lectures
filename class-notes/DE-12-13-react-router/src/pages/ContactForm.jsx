@@ -1,5 +1,7 @@
-import React from 'react'
-import { useState } from 'react';
+import React from "react";
+import { useState } from "react";
+
+//!event-hooks tan Form.jsx ten aldık
 
 const ContactForm = () => {
     const [isim, setIsim] = useState("");
@@ -69,6 +71,6 @@ const ContactForm = () => {
             </form>
         </div>
     );
-}
+};
 
 export default ContactForm;

@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 
+
+//!useEffect teki People.jsx componenti
+
 const Teacher = () => {
     const [insanlar, setInsanlar] = useState([]);
 
