@@ -1,5 +1,7 @@
 import { Navbar, Container, Nav } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom';
 import logo from "../img/logo.png"
+
 const MyNavbar = () => {
     return (
         <Navbar bg="light" expand="lg">
@@ -14,8 +16,8 @@ const MyNavbar = () => {
                         style={{ maxHeight: "100px" }}
                         navbarScroll
                     >
-                        <Nav.Link href="#action1">Home</Nav.Link>
-                        <Nav.Link href="#action2">People</Nav.Link>
+                        <NavLink to="/" className="nav-link">Home</NavLink>
+                        <NavLink href="#action2">People</NavLink>
 
                     </Nav>
 
