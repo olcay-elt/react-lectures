@@ -6,33 +6,18 @@ import about from '../img/about.jpeg'
 
 
 const Slider = () => {
+    // !!!!!!!!!!!
+    //! fade=soluklaşarak diğer resme geç, autoPlay={true} otomatik resim değiş, interval={5000} 5 saniyede bir
     return (
-        <Carousel>
+        <Carousel fade autoPlay={true} interval={5000}>
             <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={devops}
-                    alt="First slide"
-                />
-
+                <img className="d-block w-100" src={devops} alt="First slide" />
             </Carousel.Item>
             <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={about}
-                    alt="Second slide"
-                />
-
-
+                <img className="d-block w-100" src={about} alt="Second slide" />
             </Carousel.Item>
             <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={isa}
-                    alt="Third slide"
-                />
-
-
+                <img className="d-block w-100" src={isa} alt="Third slide" />
             </Carousel.Item>
         </Carousel>
     );
