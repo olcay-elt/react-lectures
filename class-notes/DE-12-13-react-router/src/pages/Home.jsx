@@ -11,20 +11,9 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;
 
 
 
 
 
-
-const topla = (a, b) => a + b;
-
-const hello = () => {
-    console.log("hello");
-}
-const user = {
-    name: "ahmet",
-    surname="ak"
-}
-export default user;
