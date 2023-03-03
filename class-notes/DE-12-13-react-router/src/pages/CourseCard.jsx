@@ -1,6 +1,8 @@
 import { Container, Col, Card, Row, Button } from 'react-bootstrap'
 import data from "../data"
 const CourseCard = () => {
+    //!react-bootstrap ten CourseCard componenti
+
     return (
         <Container className="text-center mt-4 p-4 ">
             <Row className="g-3">
