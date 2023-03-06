@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const ButonSSS = styled.button`
-  background-color: red;
+  background-color: ${({ bgAdem }) => bgAdem || "white"};
 
-  color: white;
+  color: ${(props) => props.colorOlcay || "white"};
 
   border: 1px solid #a62440;
   border-radius: 5px;
