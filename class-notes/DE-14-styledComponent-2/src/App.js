@@ -6,7 +6,7 @@ import ContainerSSS from "./components/styles/ContainerSSS";
 
 const style = {
     colors: {
-        logo: "orange",
+        logo: "lightblue",
         header: "lightblue",
     },
     responsive: "724px"
