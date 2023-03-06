@@ -4,15 +4,15 @@ const ImageSSS = styled.img`
   width: 350px;
   border: 1px solid red;
 
-  //!responsive
+  
 `;
 
 export const LogoSSS = styled.img`
-  background-color: orange;
+  background-color: ${({ theme }) => theme.colors.logo};
   width: 300px;
   padding: 2rem 0;
 
-  //!responsive
+ 
 `;
 
 export default ImageSSS;
