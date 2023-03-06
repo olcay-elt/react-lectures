@@ -16,8 +16,13 @@ const Header = () => {
             <hr />
             <DisplaySSS>
                 <div>
-                    <h1>The IT Career of Your Dreams</h1>
-                    <p>sdkjfclsdjclksdncklsdjklsdn</p>
+
+                    <h1>The IT Career of Your Dreams Starts Here!</h1>
+                    <p>
+                        Clarusway is a leading international software Bootcamp. Join a micro
+                        class online with other trainees and learn coding skills with a
+                        highly-skilled instructor.
+                    </p>
                     <button>Start</button>
                 </div>
                 <ImageSSS
