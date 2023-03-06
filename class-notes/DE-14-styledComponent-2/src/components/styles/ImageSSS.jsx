@@ -1,8 +1,18 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-const IMG = styled.img`
-S
+const ImageSSS = styled.img`
+  width: 350px;
+  border: 1px solid red;
+
+  //!responsive
 `;
 
-export default IMG;
+export const LogoSSS = styled.img`
+  background-color: orange;
+  width: 300px;
+  padding: 2rem 0;
 
+  //!responsive
+`;
+
+export default ImageSSS;
