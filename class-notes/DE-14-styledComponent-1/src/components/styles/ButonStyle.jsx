@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ButonStyle = styled.button`
-  background-color: orange;
+  background-color: ${({ sefa }) => sefa ? "lightblue" : "orange"};
   color: blue;
   cursor: pointer;
   padding: 1rem 1.5rem;
@@ -17,7 +17,7 @@ const ButonStyle = styled.button`
 
 
 export const DomatesButon = styled(ButonStyle)`
-color:green;
+color:${({ mehmet }) => mehmet ? " tomato" : "green "};
 background-color:aquamarine;
 border:3px solid red;
 
