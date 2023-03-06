@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const ButtonStyle = styled.button`
-background-color: orange;
+const ButonStyle = styled.button`
+  background-color: orange;
   color: blue;
   cursor: pointer;
   padding: 1rem 1.5rem;
@@ -9,7 +9,19 @@ background-color: orange;
   border-radius: 5px;
   font-family: "tahoma";
   font-size: 30px;
+&:hover{
+    transform:scale(0.95)
+}
 
 `;
 
-export default ButtonStyle;
+
+export const DomatesButon = styled(ButonStyle)`
+color:green;
+background-color:aquamarine;
+border:3px solid red;
+
+`
+
+
+export default ButonStyle;
