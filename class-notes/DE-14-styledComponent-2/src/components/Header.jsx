@@ -1,9 +1,11 @@
 import DisplaySSS from "./styles/DisplaySSS";
+import ImageSSS, { LogoSSS } from "./styles/ImageSSS";
 
 const Header = () => {
     return (
         <div>
             <DisplaySSS>
+                <LogoSSS src="./images/logo.jpg"
                 <img src="" alt="" />
 
                 <div>
@@ -18,8 +20,7 @@ const Header = () => {
                     <p>sdkjfclsdjclksdncklsdjklsdn</p>
                     <button>Start</button>
                 </div>
-
-                <img src="" alt="" />
+                <ImageSSS
             </DisplaySSS>
         </div>
     );
