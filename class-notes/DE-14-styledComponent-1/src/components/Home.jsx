@@ -1,19 +1,21 @@
+import ButonStyle, { DomatesButon } from "./styles/ButonStyle";
 import ContainerStyle from "./styles/ContainerStyle";
-import HeaderStyle, { Linkstyle } from "./styles/HeaderStyle";
-import ButonStyle, { DomatesButon } from "./styles/Linkstyle";
+import HeaderStyle, { LinkStyle } from "./styles/HeaderStyle";
+
 
 const Home = () => {
     return (
         <ContainerStyle>
-            <HeaderStyle>
-                STYLED COMPONENT
-            </HeaderStyle>
 
-            <Linkstyle>LINK TIKLA</Linkstyle>
-            <ButonStyle>TIKLA1</ButonStyle>
-            <ButonStyle>TIKLA1</ButonStyle>
+            <HeaderStyle>STYLED COMPONENT</HeaderStyle>
+            <LinkStyle>LINK TIKLA</LinkStyle>
 
-            <DomatesButon>TIKLA3</DomatesButon>
+            <ButonStyle sefa>TIKLA1</ButonStyle>
+
+            <ButonStyle >TIKLA2</ButonStyle>
+
+            <DomatesButon mehmet>TIKLA3</DomatesButon>
+
             <DomatesButon>TIKLA4</DomatesButon>
 
         </ContainerStyle>
