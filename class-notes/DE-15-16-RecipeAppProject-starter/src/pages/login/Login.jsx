@@ -33,23 +33,3 @@ export default Login;
 
 
 
-
-
-function User({ name, surname, age }) {
-    return (
-        <div>
-            <h1>
-                {islogged ? ` ${name} ${surname}` : "lutfen"}
-            </h1>
-
-            {friends.map((friend) => {
-                return <div key={friends.id}>
-                    {
-
-                    }
-
-                </div>
-            })}
-        </div>
-    )
-}
