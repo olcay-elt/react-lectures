@@ -32,14 +32,3 @@ const Login = () => {
 export default Login;
 
 
-function User(props) {
-    return (
-        <h1>
-            {
-                props.isLogged ? ` ${props.name}` : "Giris yapmadiniz"
-            }
-        </h1>
-    )
-}
-
-export default User;
