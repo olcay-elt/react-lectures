@@ -17,21 +17,32 @@ const Home = () => {
     // query=yazdığımız sorgu kelimesi, mealType=breakfast vs
     const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${ögün}`;
 
+
+
+
     const getData = async () => {
         const veri = await axios.get(url);
         setYemekler(veri.data.hits);
         //  console.log(veri);
     };
+
+
+
+
+
+
+
     console.log(yemekler);
     return (
         <div>
+
             <Header setQuery={setQuery} setOgun={setOgun} getData={getData} />
 
             {yemekler.length > 0 ? (
                 <MainContainer>
-                    {yemekler.map((i, index) => (
-                        <RecipeCard key={index} i={i.recipe} />
-                    ))}
+
+                    <RecipeCard yemekler={yemekler} />
+
                 </MainContainer>
             ) : (
                 <ImgDiv>
