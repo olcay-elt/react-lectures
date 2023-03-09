@@ -15,7 +15,7 @@ export const DetailContainer = styled.div`
 export const DetailPart = styled.div`
   /* verilerin , içindekiler,resim ve Nutrients in yazdığı yer */
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
