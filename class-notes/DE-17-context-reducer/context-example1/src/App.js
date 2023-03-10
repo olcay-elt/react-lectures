@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Home from "./pages/Home";
 import data from "./data";
 
+export const StudentContext = createContext()
+
 function App() {
     const [students, setStudents] = useState(data);
 
