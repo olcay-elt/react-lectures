@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import StudentList from "../components/StudentList";
 
-const Home = ({ students }) => {
-    return (
-        <studentList students={students} />
-    )
-}
+const Home = ({ students, changeColor }) => {
+    return <StudentList students={students} changeColor={changeColor} />;
+};
 
-export default Home
+export default Home;

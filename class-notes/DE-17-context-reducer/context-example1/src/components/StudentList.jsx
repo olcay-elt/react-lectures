@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
+import StudentItem from "./StudentItem";
 
-const StudentList = ({ student }) => {
+const StudentList = ({ students, changeColor }) => {
     return (
         <div>
-            {students.map(student => <StudentItem key={student.id})}
+            {students.map((student) => (
+                <StudentItem
+                    key={student.id}
+                    student={student}
+                    changeColor={changeColor}
+                />
+            ))}
         </div>
-    )
-}
+    );
+};
 
-export default StudentList
+export default StudentList;

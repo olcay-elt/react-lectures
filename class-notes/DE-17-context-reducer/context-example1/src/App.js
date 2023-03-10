@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Home from "./pages/Home";
-import data from
-    function App() {
-        const [students, setStudents] = useState(data);
+import data from "./data";
 
-        const changeColor = (color) => {
-            setStudents()
-        }
-        return (
-            <div>
-                <Home students={students} changeColor={changeColor} />
-            </div>
+function App() {
+    const [students, setStudents] = useState(data);
+
+    const changeColor = (id, color) => {
+        const newStudents = students.map((student) =>
+            student.id === id ? { ...student, color: color } : student
         );
-    }
+        setStudents(newStudents);
+    };
+    return (
+        <div>
+            <Home students={students} changeColor={changeColor} />
+        </div>
+    );
+}
 export default App;
