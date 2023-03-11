@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { StudentContext } from "../App";
 
-const StudentItem = ({ student, changeColor }) => {
+const StudentItem = ({ student }) => {
     console.log(student);
     const { id, name, age, color, email } = student;
+    const { changeColor } = useContext(StudentContext);
     return (
         <div
             style={{
