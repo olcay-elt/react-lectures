@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 import Home from "./pages/Home";
 import data from "./data";
 
-export const StudentContext = createContext()
+//? Context oluşturma
+export const StudentContext = createContext();
+// export const {Provider} = createContext()
 
 function App() {
     const [students, setStudents] = useState(data);
@@ -15,12 +17,11 @@ function App() {
     };
     return (
         <div>
-            <Home students={students} changeColor={changeColor} />
+            {/* <Home students={students} changeColor={changeColor} /> */}
+            <StudentContext.Provider value={{ students, changeColor }}>
+                <Home />
+            </StudentContext.Provider>
         </div>
     );
 }
 export default App;
-
-
-
-
