@@ -1,7 +1,12 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 //? Creating Context
 export const UserContext = createContext();
+
+//? 3-Consume function (Custom Hook)
+// export const useUserContext = () => {
+//   return useContext(UserContext)
+// }
 
 //? Provider Component
 const UserContextProvider = ({ children }) => {
