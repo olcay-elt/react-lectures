@@ -5,6 +5,7 @@ import { UserContext } from "../context/UserContextProvider";
 const ShowUsers = () => {
     //? users bilgisini context'den okuduk
     const { users } = useContext(UserContext);
+    // const { users } = useUserContext();
     console.log(users);
     return (
         <div>
