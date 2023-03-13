@@ -20,6 +20,7 @@ const Register = () => {
                         />
                         <label htmlFor="floating_text">First Name</label>
                     </div>
+
                     <div class="relative z-0 w-full mb-6 group">
 
                         <input
@@ -55,6 +56,7 @@ const Register = () => {
 
                         <label htmlFor="floating_password">Password</label>
                     </div>
+
                     <button className="btn-danger" type="submit">
                         Register
                     </button>
