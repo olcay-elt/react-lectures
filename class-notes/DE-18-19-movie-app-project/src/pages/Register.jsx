@@ -49,6 +49,7 @@ const Register = () => {
                             type="password"
                             placeholder=" "
                         />
+
                         <label htmlFor="floating_password">Password</label>
                     </div>
                     <button className="btn-danger" type="submit">
