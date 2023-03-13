@@ -9,6 +9,7 @@ const Register = () => {
                     <h2 className="text-red-main text-2xl font-[500] text-center tracking-[0.1em] mb-3">
                         Sign Up
                     </h2>
+
                     <div class="relative z-0 w-full mb-6 group">
                         <input
                             class="peer"
