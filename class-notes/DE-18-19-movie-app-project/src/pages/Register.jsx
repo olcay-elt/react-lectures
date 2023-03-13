@@ -27,6 +27,7 @@ const Register = () => {
                             required
                             placeholder=" "
                         />
+
                         <label htmlFor="floating_text">Last Name</label>
                     </div>
                     <div class="relative z-0 w-full mb-6 group">
