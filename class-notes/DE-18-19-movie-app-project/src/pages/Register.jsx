@@ -55,6 +55,7 @@ const Register = () => {
                     <button className="btn-danger" type="submit">
                         Register
                     </button>
+
                     <button
                         className="btn-danger flex justify-between items-center"
                         type="button"
