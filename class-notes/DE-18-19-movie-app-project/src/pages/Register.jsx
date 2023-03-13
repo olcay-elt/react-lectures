@@ -42,6 +42,7 @@ const Register = () => {
 
                         <label for="floating_email">Email address</label>
                     </div>
+
                     <div class="relative z-0 w-full mb-6 group">
                         <input
                             class="peer"
