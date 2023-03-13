@@ -53,7 +53,6 @@ const Register = () => {
                             type="password"
                             placeholder=" "
                         />
-
                         <label htmlFor="floating_password">Password</label>
                     </div>
 
