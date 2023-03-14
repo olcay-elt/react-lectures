@@ -9,10 +9,9 @@ const Register = () => {
                     <h2 className="text-red-main text-2xl font-[500] text-center tracking-[0.1em] mb-3">
                         Sign Up
                     </h2>
-
-                    <div class="relative z-0 w-full mb-6 group">
+                    <div className="relative z-0 w-full mb-6 group">
                         <input
-                            class="peer"
+                            className="peer"
                             name="floating_text"
                             type="text"
                             required
@@ -20,46 +19,38 @@ const Register = () => {
                         />
                         <label htmlFor="floating_text">First Name</label>
                     </div>
-
-                    <div class="relative z-0 w-full mb-6 group">
-
+                    <div className="relative z-0 w-full mb-6 group">
                         <input
-                            class="peer"
+                            className="peer"
                             name="floating_text"
                             type="text"
                             required
                             placeholder=" "
                         />
-
                         <label htmlFor="floating_text">Last Name</label>
                     </div>
-
-                    <div class="relative z-0 w-full mb-6 group">
+                    <div className="relative z-0 w-full mb-6 group">
                         <input
                             type="email"
                             name="floating_email"
-                            class="peer"
+                            className="peer"
                             placeholder=" "
                             required
                         />
-
-                        <label for="floating_email">Email address</label>
+                        <label htmlFor="floating_email">Email address</label>
                     </div>
-
-                    <div class="relative z-0 w-full mb-6 group">
+                    <div className="relative z-0 w-full mb-6 group">
                         <input
-                            class="peer"
+                            className="peer"
                             name="floating_password"
                             type="password"
                             placeholder=" "
                         />
                         <label htmlFor="floating_password">Password</label>
                     </div>
-
                     <button className="btn-danger" type="submit">
                         Register
                     </button>
-
                     <button
                         className="btn-danger flex justify-between items-center"
                         type="button"
