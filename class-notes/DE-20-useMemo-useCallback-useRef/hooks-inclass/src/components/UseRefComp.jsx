@@ -1,9 +1,33 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from "react";
 
 const UseRefComp = () => {
-    return (
-        <div>UseRefComp</div>
-    )
-}
+    const [text, setText] = useState("")
+    const inputRef = useRef()
+    const divRef = useRef()
 
-export default UseRefComp
+    const handleSearch = () => {
+        console.log(inputRef)
+        console.log(inputRef.current.value)
+
+        console.log(divRef.current)
+        console.log(divRef.current.lastElementChild)
+        console.log(divRef.current.lastElementChild.lastElementChild.innerText)
+    }
+
+    useEffect(() => {
+        inputRef.current.focus()
+    }, [])
+
+
+    return (
+        <div ref={divRef}>
+            UseRefComp
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <input type="text" ref={inputRef} />
+                <button type="button" onClick={handleSearch}>Search</button>
+            </div>
+        </div>
+    );
+};
+
+export default UseRefComp;
