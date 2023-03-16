@@ -1,8 +1,11 @@
 import React from 'react'
 
-const ClearButton = () => {
+const ClearButton = ({ handleClear }) => {
+    console.log("Render => ClearButton componenti")
     return (
-        <div>ClearButton</div>
+        <div>
+            <button className='btn btn-info' onClick={handleClear}>ClearButton</button>
+        </div>
     )
 }
 
