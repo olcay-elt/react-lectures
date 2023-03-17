@@ -5,8 +5,7 @@ const Home = () => {
     return (
         <>
             <MuiElements />
-            <InputElem
-            />
+            <InputElem />
         </>
     );
 };
