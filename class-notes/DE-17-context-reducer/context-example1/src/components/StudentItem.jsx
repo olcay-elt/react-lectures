@@ -42,7 +42,7 @@ function Form() {
     return
     <div>
         <div>
-            <input name="fullname" />
+            <input name="fullname" placeholder="Full Name" />
         </div>
         <div>
             <input name="phone_number" />
