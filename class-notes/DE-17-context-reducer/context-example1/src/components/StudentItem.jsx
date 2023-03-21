@@ -45,7 +45,7 @@ function Form() {
             <input name="fullname" placeholder="Full Name" />
         </div>
         <div>
-            <input name="phone_number" />
+            <input name="phone_number" placeholder="Phone Number" />
         </div>
 
     </div>
