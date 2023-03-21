@@ -39,13 +39,19 @@ export default StudentItem;
 
 
 function Form() {
+    const [form, setForm] = ({ fullName: "", phone_number: '' });
+    const onChangeInput = (e) => {
+        setForm({ ...form, [e.target.name]: e.target.value });
+
+        const
+    };
     return
     <div>
         <div>
-            <input name="fullname" placeholder="Full Name" />
+            <input name="fullname" placeholder="Full Name" onChange={onChangeInput} />
         </div>
         <div>
-            <input name="phone_number" placeholder="Phone Number" />
+            <input name="phone_number" placeholder="Phone Number" onChange={onChangeInput} />
         </div>
         <div>
             <button>Add</button>
