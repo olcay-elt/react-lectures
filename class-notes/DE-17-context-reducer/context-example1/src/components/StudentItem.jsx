@@ -38,32 +38,3 @@ export default StudentItem;
 
 
 
-function Form({ }) {
-    const [form, setForm] = ({ fullName: "", phone_number: '' });
-    const onChangeInput = (e) => {
-        setForm({ ...form, [e.target.name]: e.target.value });
-
-        const onSubmit = () =>
-            e.preventDefault();
-        if (form.fullName === "" || form.phone === "") {
-            return false;
-        }
-        console.log(form);
-    };
-
-    return
-    <form onSubmit={onSubmit}>
-        <div>
-            <input name="fullname" placeholder="Full Name" onChange={onChangeInput} />
-        </div>
-        <div>
-            <input name="phone_number" placeholder="Phone Number" onChange={onChangeInput} />
-        </div>
-        <div>
-            <button>Add</button>
-        </div>
-
-    </form>
-}
-
-export default Form
