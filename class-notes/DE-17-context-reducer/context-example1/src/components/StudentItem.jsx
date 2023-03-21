@@ -38,15 +38,21 @@ export default StudentItem;
 
 
 
-function Form() {
+function Form({ }) {
     const [form, setForm] = ({ fullName: "", phone_number: '' });
     const onChangeInput = (e) => {
         setForm({ ...form, [e.target.name]: e.target.value });
 
-        const
+        const onSubmit = () =>
+            e.preventDefault();
+        if (form.fullName === "" || form.phone === "") {
+            return false;
+        }
+        console.log(form);
     };
+
     return
-    <div>
+    <form onSubmit={onSubmit}>
         <div>
             <input name="fullname" placeholder="Full Name" onChange={onChangeInput} />
         </div>
@@ -57,7 +63,7 @@ function Form() {
             <button>Add</button>
         </div>
 
-    </div>
+    </form>
 }
 
 export default Form
