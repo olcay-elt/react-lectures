@@ -29,3 +29,26 @@ const StudentItem = ({ student }) => {
 };
 
 export default StudentItem;
+
+
+
+
+
+
+
+
+
+function Form() {
+    return
+    <div>
+        <div>
+            <input name="fullname" />
+        </div>
+        <div>
+
+        </div>
+
+    </div>
+}
+
+export default Form
