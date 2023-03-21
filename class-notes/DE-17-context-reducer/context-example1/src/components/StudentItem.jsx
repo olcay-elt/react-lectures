@@ -45,7 +45,7 @@ function Form() {
             <input name="fullname" />
         </div>
         <div>
-
+            <input name="fullname" />
         </div>
 
     </div>
