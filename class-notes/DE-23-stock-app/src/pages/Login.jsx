@@ -103,10 +103,11 @@ const Login = () => {
             <img src={image} alt="img" />
           </Container>
         </Grid>
+
       </Grid>
     </Container>
   )
 }
 >>>>>>> af676470ef24a739715a46643f78aea5a37ebdec
 
-export default Login
+export default Login 
