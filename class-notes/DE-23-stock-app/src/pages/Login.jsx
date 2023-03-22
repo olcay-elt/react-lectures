@@ -61,18 +61,18 @@ const Login = () => {
 <<<<<<< HEAD
 
 
-                    <Box sx={{ textAlign: "center", mt: 2 }}>
-                        <Link to="/register">Do you have not an account?</Link>
-                    </Box>
-                </Grid>
+    <Box sx={{ textAlign: "center", mt: 2 }}>
+        <Link to="/register">Do you have not an account?</Link>
+    </Box>
+                </Grid >
 
-                <Grid item xs={10} sm={7} md={6}>
-                    <Container>
-                        <img src={image} alt="img" />
-                    </Container>
-                </Grid>
-            </Grid>
+    <Grid item xs={10} sm={7} md={6}>
+        <Container>
+            <img src={image} alt="img" />
         </Container>
+    </Grid>
+            </Grid >
+        </Container >
     );
 };
 =======
