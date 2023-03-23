@@ -1,25 +1,17 @@
-import Avatar from "@mui/material/Avatar"
-import Box from "@mui/material/Box"
-import Container from "@mui/material/Container"
-import Grid from "@mui/material/Grid"
-import Typography from "@mui/material/Typography"
-import LockIcon from "@mui/icons-material/Lock"
-import image from "../assets/result.svg"
-import { Link, useNavigate } from "react-router-dom"
-import { useSelector } from "react-redux"
-import { Formik, Form } from "formik"
-import TextField from "@mui/material/TextField"
+import Avatar from "@mui/material/Avatar";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import LockIcon from "@mui/icons-material/Lock";
+import image from "../assets/result.svg";
+import { Link, useNavigate } from "react-router-dom";
+
+import { useSelector } from "react-redux";
 
 const Login = () => {
-<<<<<<< HEAD
     const navigate = useNavigate();
     const { currentUser, error } = useSelector((state) => state?.auth);
-=======
-  const navigate = useNavigate()
-  const { currentUser, error } = useSelector((state) => state?.auth)
-
-  const loginScheme = {}
->>>>>>> af676470ef24a739715a46643f78aea5a37ebdec
 
     return (
         <Container maxWidth="lg">
@@ -58,55 +50,21 @@ const Login = () => {
                         Login
                     </Typography>
 
-<<<<<<< HEAD
 
 
-    <Box sx={{ textAlign: "center", mt: 2 }}>
-        <Link to="/register">Do you have not an account?</Link>
-    </Box>
-                </Grid >
+                    <Box sx={{ textAlign: "center", mt: 2 }}>
+                        <Link to="/register">Do you have not an account?</Link>
+                    </Box>
+                </Grid>
 
-    <Grid item xs={10} sm={7} md={6}>
-        <Container>
-            <img src={image} alt="img" />
+                <Grid item xs={10} sm={7} md={6}>
+                    <Container>
+                        <img src={image} alt="img" />
+                    </Container>
+                </Grid>
+            </Grid>
         </Container>
-    </Grid>
-            </Grid >
-        </Container >
     );
 };
-=======
-          <Formik
-            initialValues={{ email: "", password: "" }}
-            validationSchema={loginScheme}
-            onSubmit={(values, actions) => {
-              //TODO login(values)  POST istegi
-              //TODO navigate
-              actions.resetForm()
-              actions.setSubmitting(false)
-            }}
-          >
-            {({ values, handleChange, handleBlur, errors }) => {
-              ;<Form>
-                <TextField></TextField>
-              </Form>
-            }}
-          </Formik>
 
-          <Box sx={{ textAlign: "center", mt: 2 }}>
-            <Link to="/register">Do you have not an account?</Link>
-          </Box>
-        </Grid>
-
-        <Grid item xs={10} sm={7} md={6}>
-          <Container>
-            <img src={image} alt="img" />
-          </Container>
-        </Grid>
-      </Grid>
-    </Container>
-  )
-}
->>>>>>> af676470ef24a739715a46643f78aea5a37ebdec
-
-export default Login
+export default Login;
