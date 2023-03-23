@@ -28,3 +28,16 @@ function Dashboard() {
 }
 
 export default Dashboard;
+
+
+import React from 'react'
+
+function List({ contacts }) {
+    const [filterText, setFilterText] = useState("");
+
+    return (
+        <div>List<{contacts} /div>
+            )
+}
+
+            export default List{contacts}
