@@ -1,10 +1,31 @@
-import { useSelector } from "react-redux";
-import { Navigate, Outlet } from "react-router-dom";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import AppRouter from "./router/AppRouter";
+import { grey, blueGrey } from "@mui/material/colors";
+import { Provider } from "react-redux";
+import store from "./app/store";
+import { ToastContainer } from "react-toastify";
 
-const PrivateRouter = () => {
-    const { currentUser } = useSelector((state) => state.auth);
+function App() {
+    const theme = createTheme({
+        palette: {
+            primary: {
+                main: grey["900"],
+            },
+            secondary: {
+                main: blueGrey["900"],
+            },
+        },
+    });
+    return (
+        <>
+            <ThemeProvider theme={theme}>
+                <Provider store={store}>
+                    <AppRouter />
+                </Provider>
+                <ToastContainer />
+            </ThemeProvider>
+        </>
+    );
+}
 
-    return currentUser ? <Outlet /> : <Navigate to="/" />;
-};
-
-export default PrivateRouter;
+export default App;
