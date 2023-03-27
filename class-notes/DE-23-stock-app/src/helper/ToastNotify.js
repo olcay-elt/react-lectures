@@ -1,30 +1,35 @@
-import React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-import Toolbar from "@mui/material/Toolbar";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+export const toastWarnNotify = (msg) => {
+    toast.warn(msg, {
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+};
 
-import { useSelector } from "react-redux";
+export const toastSuccessNotify = (msg) => {
+    toast.success(msg, {
+        autoClose: 1500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+};
 
-function Dashboard() {
-    const { currentUser } = useSelector((state) => state.auth);
-
-    return (
-        <Box sx={{ display: "flex" }}>
-            <CssBaseline />
-            <AppBar position="fixed">
-                <Toolbar>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        STOCK APP
-                    </Typography>
-                    {currentUser && <Button color="inherit">Logout</Button>}
-                </Toolbar>
-            </AppBar>
-        </Box>
-    );
-}
-
-export default Dashboard;
+export const toastErrorNotify = (msg) => {
+    toast.error(msg, {
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+    });
+};
