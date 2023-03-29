@@ -92,7 +92,7 @@ const Products = () => {
 
     useEffect(() => {
         getStockData("products")
-    }, [])
+    },)
 
     return (
         <div>
