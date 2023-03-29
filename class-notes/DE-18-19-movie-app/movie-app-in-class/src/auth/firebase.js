@@ -5,13 +5,15 @@ import { getAuth } from "firebase/auth";
 //* https://console.firebase.google.com/ => project settings
 //! firebase console settings bölümünden firebaseconfig ayarlarını al
 // TODO: Replace the following with your app's Firebase project configuration
+
+
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_apiKey,
-  authDomain: process.env.REACT_APP_authDomain,
-  projectId: process.env.REACT_APP_projectId,
-  storageBucket: process.env.REACT_APP_storageBucket,
-  messagingSenderId: process.env.REACT_APP_messagingSenderId,
-  appId: process.env.REACT_APP_appId,
+    apiKey: "AIzaSyBbwzgQOtHPkV4za9nKPqJDn9x2IwxOpK8",
+    authDomain: "movieapp-1dd4b.firebaseapp.com",
+    projectId: "movieapp-1dd4b",
+    storageBucket: "movieapp-1dd4b.appspot.com",
+    messagingSenderId: "112127748100",
+    appId: "1:112127748100:web:5bb236a6f4e7222cb6ad51"
 };
 
 // Initialize Firebase
