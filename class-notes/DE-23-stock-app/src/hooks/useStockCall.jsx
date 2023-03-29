@@ -67,4 +67,4 @@ const useStockCall = () => {
     return { getStockData, deleteStockData, postStockData, putStockData }
 }
 
-export default useStockCall
+export default useStockCall;
