@@ -9,9 +9,7 @@ const App = () => {
         <div className="dark:bg-gray-dark-main">
             <AuthContextProvider>
                 <MovieContextProvider>
-                    <AppRouter />
-                    <ToastContainer />
-                </MovieContextProvider>
+
             </AuthContextProvider>
         </div>
     );
