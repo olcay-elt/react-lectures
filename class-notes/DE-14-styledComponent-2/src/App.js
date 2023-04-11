@@ -12,16 +12,7 @@ const style = {
     responsive: "724px"
 };
 
-const App = () => {
-    return (
-        <ThemeProvider theme={style}>
-            <ContainerSSS>
-                <Header />
-                <Card />
-            </ContainerSSS>
-        </ThemeProvider>
-    );
-};
+
 
 export default App;
 
