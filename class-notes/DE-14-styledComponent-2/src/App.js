@@ -4,13 +4,7 @@ import Card from "./components/Card";
 import Header from "./components/Header";
 import ContainerSSS from "./components/styles/ContainerSSS";
 
-const style = {
-    colors: {
-        logo: "lightblue",
-        header: "lightblue",
-    },
-    responsive: "724px"
-};
+
 
 const App = () => {
     return (
